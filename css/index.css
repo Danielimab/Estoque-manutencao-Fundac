@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Cor de fundo clara */
+    color: #003366; /* Cor do texto principal */
+    margin: 0;
+    padding: 0; /* Removido padding do body para top-bar encostar */
+    display: flex;
+    flex-direction: column; /* Organiza top-bar e main-content */
+    min-height: 100vh;
+}
+
+/* Barra Superior para Voltar e Logo */
+.top-bar {
+    display: flex;
+    justify-content: space-between; /* Espaça Voltar e Logo */
+    align-items: center; /* Alinha verticalmente */
+    padding: 15px 20px; /* Espaçamento interno */
+    background-color: #0756b1; /* Fundo branco para a barra */
+    border-bottom: 1px solid #d1dff0; /* Linha separadora */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.back-link {
+    /* Removido position: absolute */
+    background-color: #ffffff;
+    color: #0756b1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #d1dff0;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap; /* Evita quebra de linha */
+}
+
+.back-link:hover {
+    background-color: #e9ecef;
+    color: #003366;
+}
+
+.top-logo {
+    max-height: 40px; /* Altura máxima para o logo no topo */
+    max-width: 200px; /* Largura máxima para não ficar muito grande */
+    height: auto;
+    width: auto; /* Mantém proporção */
+}
+
+/* Conteúdo Principal */
+.main-content h1{
+    flex-grow: 1; /* Faz ocupar o espaço restante abaixo do top-bar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+    padding: 60px 20px; /* Mantém padding vertical e horizontal para o conteúdo interno */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0; /* Garante que não haja margem acima */
+
+    /* Banner como fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/banner-daniel.jpg'); /* Overlay escuro + Imagem */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    position: relative; /* Necessário para z-index dos filhos funcionar bem */
+}
+
+.main-content h1 {
+    color: #0756b1; /* Texto branco para contraste com fundo */
+    margin-bottom: 40px;
+    font-size: 3.5em;
+    margin-top: 0; /* Sem margem superior para o H1 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
+    position: relative; /* Garante que fique sobre o pseudo-elemento se usado */
+    z-index: 2;
+}
+
+
+
+.Banner{
+    padding: auto;
+    margin-top: 40px;
+    height: auto;
+    width: auto; /* Mantém proporção */
+}
+
+#accessButtons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Botões em linha */
+    justify-content: center; /* Centraliza os botões como grupo */
+    align-items: stretch; /* Faz botões terem a mesma altura */
+    gap: 20px; /* Espaço entre os botões */
+    width: 100%; /* Ocupa a largura do container */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+
+/* Estilo dos botões */
+#accessButtons a.button {
+    flex: 1 1 200px;
+    padding: 20px 15px; /* Ajustado padding */
+    background-color: #0756b1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    min-width: 180px; /* Largura mínima para evitar que fiquem muito estreitos */
+}
+
+#accessButtons a.button:hover {
+    background-color: #003366;
+}
+

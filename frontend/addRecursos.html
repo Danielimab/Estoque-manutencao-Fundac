@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos</title>
+    <link rel="stylesheet" href="../css/addRecursos.css">
+</head>
+<body>
+
+    <div class="header">
+        <a id="backButton" href="index.html">Voltar</a>
+        <img src="img/marca conjunta branca.png" alt="Logo Fundac" class="header-logo">
+    </div>
+
+    <h1>Gerenciamento de Recursos</h1>
+    
+    <form id="resourceForm">
+        <input type="hidden" id="resourceId" name="id">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="unidade">Unidade de Medida:</label>
+        <input type="text" id="unidade" name="unidade" required>
+        <label for="quantity">Quantidade:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <button type="submit" id="submitButton">Adicionar Recurso</button>
+    </form>
+
+</body>
+</html>

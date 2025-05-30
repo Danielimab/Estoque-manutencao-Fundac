@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Um cinza muito claro para diferenciar do box branco */
+    color: #003366; /* Cor do texto principal (azul escuro) */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura */
+}
+
+.login-container {
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #071424;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 60%; 
+}
+
+.logo {
+    max-width: 400px; /* Ajuste conforme o tamanho do seu logo */
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #003366;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #003366; /* Cor do label (azul escuro) */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1dff0; /* Borda azul clara */
+    border-radius: 5px;
+    box-sizing: border-box; /* Para incluir padding na largura total */
+    font-size: 1em;
+}
+
+.login-button {
+    background-color: #0756b1; /* Cor de fundo do botão (azul primário) */
+    color: #ffffff; /* Cor do texto do botão (branco) */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botão ocupa toda a largura */
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #003366; /* Cor de fundo do botão ao passar o mouse (azul escuro) */
+}
+

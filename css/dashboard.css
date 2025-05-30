@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+    color: #003366; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #0756b1; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.header-logo {
+    height: 40px;
+    width: auto;
+}
+
+#dashboardData {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #d1dff0; 
+}
+.logo{
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+pre {
+    color: #0756b1; /* Cor do texto pré-formatado (azul escuro) */
+    font-family: 'Arial', sans-serif;
+}
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0756b1; /* Cor de fundo dos links/botões (azul primário) */
+    color: #ffffff; /* Cor do texto dos links/botões (branco) */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+a:hover {
+    background-color: #003366; /* Cor de fundo dos links/botões ao passar o mouse (azul escuro) - Ajustado para diferenciar do estado normal */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* Fundo da tabela (branco) */
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #d1dff0; /* Borda inferior das células (azul claro) */
+}
+th {
+    background-color: #0756b1; /* Cor de fundo do cabeçalho da tabela (azul escuro) */
+    color: #ffffff; /* Cor do texto do cabeçalho da tabela (branco) */
+}
+tr:hover {
+    background-color: #d1dff0; /* Cor de fundo da linha ao passar o mouse (azul claro) */
+}
+
+/* Adicionado para centralizar o conteúdo do footer */
+footer {
+    text-align: center; /* Centraliza elementos inline como a imagem */
+    margin-top: 40px; /* Adiciona espaço acima do rodapé */
+    padding-bottom: 20px; /* Adiciona espaço abaixo do rodapé */
+}
+
+/* Ajuste opcional para garantir que a imagem seja tratada como inline-block se necessário */
+footer .logo {
+    display: inline-block; /* Garante que text-align funcione */
+    vertical-align: middle; /* Alinha verticalmente se houver texto junto */
+}

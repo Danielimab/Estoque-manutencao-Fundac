@@ -1,0 +1,116 @@
+/* CSS para addRecursos.html - Padrão ba.gov.br com header ajustado */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fundo geral cinza claro */
+    color: #003366; /* Cor do texto principal */
+    margin: 0;
+    padding: 0; /* Removido padding para header encostar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho com Voltar à esquerda e Logo à direita */
+.header {
+    display: flex;
+    justify-content: space-between; /* Espaça Voltar e Logo */
+    align-items: center; /* Alinha verticalmente */
+    padding: 15px 20px; /* Espaçamento interno */
+    background-color: #0756b1; /* Fundo branco para a barra */
+    border-bottom: 1px solid #d1dff0; /* Linha separadora */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#backButton {
+    /* Removido position: absolute se existia antes */
+    background-color: #ffffff;
+    color: #0756b1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #d1dff0;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+#backButton:hover {
+    background-color: #e9ecef;
+    color: #003366;
+}
+
+.header-logo {
+    max-height: 40px; /* Altura máxima para o logo no topo */
+    max-width: 200px; /* Largura máxima */
+    height: auto;
+    width: auto; /* Mantém proporção */
+}
+
+/* Estilização do conteúdo principal (h1 e form) */
+h1 {
+    color: #003366; /* Azul escuro */
+    text-align: center;
+    margin-top: 40px; /* Espaço abaixo do header */
+    margin-bottom: 30px;
+    padding: 0 20px; /* Evita que encoste nas laterais */
+}
+
+#resourceForm {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid #d1dff0; /* Borda azul clara */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 500px; /* Largura máxima do formulário */
+    box-sizing: border-box;
+    margin: 0 auto 40px auto; /* Centraliza e adiciona margem inferior */
+}
+
+#resourceForm label {
+    display: block;
+    color: #003366; /* Cor do label (azul escuro) */
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+#resourceForm input[type="text"],
+#resourceForm input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1dff0; /* Borda azul clara */
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+    margin-bottom: 20px; /* Espaço abaixo de cada input */
+    font-size: 1em;
+    color: #333; /* Cor do texto dentro do input */
+}
+
+#resourceForm input:focus {
+    outline: none;
+    border-color: #0756b1; /* Borda azul primário no foco */
+    box-shadow: 0 0 0 2px rgba(7, 86, 177, 0.2);
+}
+
+#submitButton {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #0756b1; /* Azul primário */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+#submitButton:hover {
+    background-color: #003366; /* Azul escuro no hover */
+}
+
