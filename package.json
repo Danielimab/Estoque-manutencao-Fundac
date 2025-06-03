@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  },
+  "name": "estoque-manutencao-fundac",
+  "version": "1.0.0",
+  "description": "Sistema de controle de estoque da manutenção",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielimab/Estoque-manutencao-Fundac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielimab/Estoque-manutencao-Fundac/issues"
+  },
+  "homepage": "https://github.com/Danielimab/Estoque-manutencao-Fundac#readme"
+}
