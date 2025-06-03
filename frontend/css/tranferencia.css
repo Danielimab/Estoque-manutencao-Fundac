@@ -1,0 +1,117 @@
+/* Cabeçalho com Voltar à esquerda e Logo à direita */
+header{
+    display: flex;
+    justify-content: space-between; /* Espaça Voltar e Logo */
+    align-items: center; /* Alinha verticalmente */
+    padding: 15px 20px; /* Espaçamento interno */
+    background-color: #0756b1; /* Fundo branco para a barra */
+    border-bottom: 1px solid #d1dff0; /* Linha separadora */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS para transferencia.html - Padrão ba.gov.br */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fundo geral cinza claro */
+    color: #003366; /* Cor do texto principal */
+    margin: 0;
+    padding: 0; /* Removido padding para header encostar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+
+.botao{
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #0756b1; /* Azul primário */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+
+/* Estilo do Botão Sair */
+header input[type="button"] {
+    background-color: #ffffff; /* Fundo branco */
+    color: #090909; /* Vermelho para 'sair' */
+    border: 1px solid #ffffff;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo da Logo no Header */
+header img {
+    max-height: 40px; /* Altura máxima */
+    width: auto; /* Mantém proporção */
+}
+
+/* Container do Formulário (div abaixo do header) */
+body > div:not(header > div) {
+    padding: 40px 20px; /* Espaçamento para o formulário */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Ocupa espaço restante */
+}
+
+/* Estilização do Formulário */
+#resourceForm {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid #d1dff0; /* Borda azul clara */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 500px; /* Largura máxima */
+    box-sizing: border-box;
+}
+
+#resourceForm label {
+    display: block;
+    color: #003366; /* Azul escuro */
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+#resourceForm input[type="text"],
+#resourceForm input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1dff0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+#resourceForm input:focus {
+    outline: none;
+    border-color: #0756b1;
+    box-shadow: 0 0 0 2px rgba(7, 86, 177, 0.2);
+}
+
+
+
