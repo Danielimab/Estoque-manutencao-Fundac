@@ -13,14 +13,19 @@ body {
 
 /* Cabeçalho com Voltar à esquerda e Logo à direita */
 .header {
+    background-color: #0756b1; 
+    color: #ffffff; 
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Espaça Voltar e Logo */
-    align-items: center; /* Alinha verticalmente */
-    padding: 15px 20px; /* Espaçamento interno */
-    background-color: #0756b1; /* Fundo branco para a barra */
-    border-bottom: 1px solid #d1dff0; /* Linha separadora */
+    align-items: center; 
     width: 100%;
     box-sizing: border-box;
+}
+
+.header h1 {
+    margin: auto;
+    padding: 0;
+    text-align: center;
 }
 
 #backButton {
@@ -47,26 +52,13 @@ body {
     height: auto;
     width: auto; /* Mantém proporção */
 }
-
-/* Estilização do conteúdo principal (h1 e form) */
-h1 {
-    color: #003366; /* Azul escuro */
-    text-align: center;
-    margin-top: 40px; /* Espaço abaixo do header */
-    margin-bottom: 30px;
-    padding: 0 20px; /* Evita que encoste nas laterais */
-}
-
-#resourceForm {
-    background-color: #ffffff; /* Fundo branco para o formulário */
-    padding: 30px 40px;
-    border-radius: 10px;
-    border: 1px solid #d1dff0; /* Borda azul clara */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 100%;
-    max-width: 500px; /* Largura máxima do formulário */
-    box-sizing: border-box;
-    margin: 0 auto 40px auto; /* Centraliza e adiciona margem inferior */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 #resourceForm label {

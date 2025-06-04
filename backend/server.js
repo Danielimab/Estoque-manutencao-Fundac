@@ -41,3 +41,36 @@ sequelize.sync({ force: false }) // force: false para não recriar as tabelas a 
   .catch((error) => {
     console.error("Erro ao sincronizar o banco de dados:", error);
   });
+
+  // Adicionar após a sincronização do banco de dados
+sequelize.sync({ force: false })
+  .then(async () => {
+    console.log("Banco de dados sincronizado com sucesso.");
+    
+    // Criar usuário admin se não existir
+    try {
+      const [user, created] = await Usuario.findOrCreate({
+        where: { username: "admin" },
+        defaults: {
+          password: "admin"
+        }
+      });
+      
+      if (created) {
+        console.log("Usuário 'admin' criado com sucesso!");
+      } else {
+        console.log("Usuário 'admin' já existe.");
+      }
+    } catch (error) {
+      console.error("Erro ao criar usuário admin:", error);
+    }
+    
+    // Iniciar o servidor
+    app.listen(PORT, () => {
+      console.log(`Servidor rodando na porta ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Erro ao sincronizar o banco de dados:", error);
+  });
+

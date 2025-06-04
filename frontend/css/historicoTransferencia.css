@@ -1,0 +1,105 @@
+/* Estilos comuns para todas as páginas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Barra superior - ocupando toda a largura */
+.top-bar {
+    background-color: #0756b1;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Container interno da barra superior */
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Logo no topo */
+.top-logo {
+    max-height: 40px; /* Altura máxima para o logo no topo */
+    max-width: 200px; /* Largura máxima */
+    height: auto;
+    width: auto; /* Mantém proporção */
+}
+
+/* Botão de voltar */
+.back-link {
+    background-color: white;
+    color: #0756b1;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+        
+.header {
+    background-color: #0756b1;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+        
+.header-logo {
+    height: 50px;
+}
+        
+h1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+        
+#historicoData {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+        
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+        
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+        
+th {
+    background-color: #0756b1;
+    color: white;
+}
+        
+tr:hover {
+    background-color: #f1f1f1;
+}
+        
+
+        
