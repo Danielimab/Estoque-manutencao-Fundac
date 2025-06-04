@@ -21,3 +21,6 @@ CREATE TABLE IF NOT EXISTS transferencia (
     FOREIGN KEY (usuario_id) REFERENCES usuario (id),
     FOREIGN KEY (recurso_id) REFERENCES recurso (id)
 );
+
+INSERT INTO usuario(username, password) VALUES
+('admin', 'admin1')
